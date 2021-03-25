@@ -1,0 +1,39 @@
+$mainBack: #22b573;
+$lightTextBack: #f1f0ee;
+$darkTextBack: #1c1414;
+$titleColor: #fbbf61;
+$textColor: #eae9e4;
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $mainBack;
+	font-family: 'Overpass', sans-serif;	
+}
+
+h4 {
+	font-weight: 100;
+}
+
+.page-main-conatiner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.title-menu-cont {
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85vw;
+	margin-top: 20px;
+	color: $textColor;
+}
