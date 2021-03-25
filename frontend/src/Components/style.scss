@@ -1,8 +1,9 @@
 $mainBack: #22b573;
 $lightTextBack: #f1f0ee;
 $darkTextBack: #1c1414;
+$darkTextColor: #1c1414;
 $titleColor: #fbbf61;
-$textColor: #eae9e4;
+$lightTextColor: #eae9e4;
 
 *,
 ::before,
@@ -35,5 +36,46 @@ h4 {
 	align-items: center;
 	width: 85vw;
 	margin-top: 20px;
-	color: $textColor;
+	color: $lightTextColor;
 }
+
+.dark-text-cont, .light-text-cont {
+	
+	background-color: $darkTextBack;
+	width: 70vw;
+	margin-top: 20px;
+	padding: 20px;
+
+	h5 {
+		color: $titleColor;
+		line-height: 2;
+	}
+
+	p {
+		font-size: .7em;
+		color: $lightTextColor;
+		line-height: 2;
+		margin: 10px 0;
+	}
+}
+
+.light-text-cont {
+	background-color: $lightTextBack;
+	
+	p {
+		color: $darkTextColor;
+	}
+	
+}
+
+div ~ a {
+	color: $titleColor;
+	text-align: left;	
+	width: 70vw;
+	margin: 5px 0;
+	text-decoration: none;
+	&:hover {
+		color: $darkTextColor;
+	}
+}
+

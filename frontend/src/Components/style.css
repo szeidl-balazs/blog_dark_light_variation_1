@@ -46,4 +46,43 @@ h4 {
   margin-top: 20px;
   color: #eae9e4;
 }
+
+.dark-text-cont, .light-text-cont {
+  background-color: #1c1414;
+  width: 70vw;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.dark-text-cont h5, .light-text-cont h5 {
+  color: #fbbf61;
+  line-height: 2;
+}
+
+.dark-text-cont p, .light-text-cont p {
+  font-size: .7em;
+  color: #eae9e4;
+  line-height: 2;
+  margin: 10px 0;
+}
+
+.light-text-cont {
+  background-color: #f1f0ee;
+}
+
+.light-text-cont p {
+  color: #1c1414;
+}
+
+div ~ a {
+  color: #fbbf61;
+  text-align: left;
+  width: 70vw;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+div ~ a:hover {
+  color: #1c1414;
+}
 /*# sourceMappingURL=style.css.map */
