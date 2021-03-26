@@ -4,6 +4,7 @@ $darkTextBack: #1c1414;
 $darkTextColor: #1c1414;
 $titleColor: #fbbf61;
 $lightTextColor: #eae9e4;
+$containerWidthMobile: 250px;
 
 *,
 ::before,
@@ -30,7 +31,7 @@ h4 {
 }
 
 .title-menu-cont {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -42,7 +43,8 @@ h4 {
 .dark-text-cont, .light-text-cont {
 	
 	background-color: $darkTextBack;
-	width: 70vw;
+	width: $containerWidthMobile;
+	height: 350px;
 	margin-top: 20px;
 	padding: 20px;
 
@@ -68,14 +70,122 @@ h4 {
 	
 }
 
-div ~ a {
+.under-title, a {
 	color: $titleColor;
 	text-align: left;	
-	width: 70vw;
+	width: $containerWidthMobile;
 	margin: 5px 0;
 	text-decoration: none;
 	&:hover {
 		color: $darkTextColor;
 	}
 }
+
+.videoplay-cont {
+	/*border: 1px solid white;*/
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video-title {
+	/*border: solid white 1px;*/
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+@media screen and (min-width: 1024px) {
+	.text-main-cont {
+		/*border: 1px solid black;*/
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 80vw;
+		height: 80vh;
+	}
+
+	.title-menu-cont {
+		width: 80vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.5em;
+		font-weight: 200;
+	}
+
+	.menu-cont {
+		position: absolute;
+		/*border: 1px solid white;*/
+		width: 100px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		right: 0;
+		top: 0;
+	}
+
+	.dark-text-cont, .light-text-cont {
+		height: 50vh;
+		font-size: 1.5em;
+		
+	}
+
+	h6 {
+		/*border: 1px black solid;*/
+		margin-top: 50px 0;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.text-main-cont {
+		/*border: 1px solid black;*/
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 80vw;
+		height: 80vh;
+	}
+
+	.title-menu-cont {
+		width: 80vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.8em;
+		font-weight: 200;
+		margin: 50px 0;
+	}
+
+	.menu-cont {
+		position: absolute;
+		/*border: 1px solid white;*/
+		width: 150px;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		right: 0;
+		top: 0;
+	}
+
+	.dark-text-cont, .light-text-cont {
+		width: 20vw;
+		height: 70vh;
+		font-size: 1.8em;
+		
+	}
+
+	h6 {
+		/*border: 1px black solid;*/
+		margin-top: 50px 0;
+		font-size: 1.5em;
+	}
+
+}
+
 

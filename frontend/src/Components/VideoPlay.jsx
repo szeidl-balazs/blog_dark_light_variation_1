@@ -1,18 +1,19 @@
+import PlayCircleOutlineOutlinedIcon from '@material-ui/icons/PlayCircleOutlineOutlined';
+/*import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';*/
 import React from 'react';
-import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
 import './style.css';
 
 const useStyle = makeStyles({
   
-   hambicon: {
+   videoplay: {
     backgroundColor: "#1c1414",
     color: "#f1f0ee",
-    stroke: "#f1f0ee",
-    fontSize: "50px",
+    stroke: ".1 1c1414",
+		fontSize: "150px",
     right: "15px",
     top: "15px",
-    padding: "10px",
+    padding: "1px",
     borderRadius: "50%",
     border: "1px solid #1c1414",
     /*borderColor: "#1c1414",*/
@@ -22,20 +23,19 @@ const useStyle = makeStyles({
       stroke: "#1c1414",
       border: "1px solid #f1f0ee",
     },
-    '@media (min-width: 1024px)': { 
-      fontSize: "60px",
-    },
-    '@media (min-width: 1280px)': { 
+    /*'@media (min-width: 50em)': { 
       fontSize: "100px",
-    }    
+    }*/
+    
   },
 });
 
 
-function MenuComp() {
+function VideoPlay() {
   const classes = useStyle();
   
-  return <MenuIcon className={classes.hambicon}></MenuIcon>;
+  return <PlayCircleOutlineOutlinedIcon className={classes.videoplay}/>;
 
 }
-export default MenuComp
+export default VideoPlay;
+
